@@ -1,0 +1,226 @@
+
+@font-face{
+    font-family: "Macondo";
+    src: url("Macondo-Regular.ttf");
+}
+
+
+body{
+    background-color: black;
+    color: gold;
+    font-size: larger;
+    font-family: "Macondo";
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    justify-content:center;
+    flex: content;
+    
+}
+
+
+.title{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#statue{
+    display: inline;
+    position: relative;
+    top: 20px;
+    height: 110px;
+}
+
+#vine{
+    display: inline-block;
+    width: 500px;
+}
+.title nav{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.title a{
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+    border: 2px gold solid;
+    color: gold;
+    text-decoration: none;
+}
+
+.title a:hover{
+    background-color: gold;
+    color: black;
+}
+
+.title_main{
+    margin: 0px !important;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px 5px 5px double gold;
+    padding: 150px 50px 150px 50px;
+    width: 800px;
+    height: fit-content;
+    background-image: url("title.png");
+    background-size:cover;
+    border: 5px gold solid;
+    outline: 1px solid gold;
+    outline-offset: -20px;
+}
+
+.text_box{
+    display: inline-block;
+    text-align: justify;
+    margin: calc(1% + 80px);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    border-image-slice: 198 183 230 163;
+    border-image-width: 100px;
+    border-image-outset: 80px 80px 45px 80px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url(roman_column.png);
+    position: relative;
+    max-width: 1000px;
+}
+
+.text_box h2{
+    font-size: 25px;
+    text-align: center;
+    position: absolute;
+    white-space: nowrap;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.text_box h3{
+    text-align: right;
+}
+.text_box p{
+    text-indent: 50px;
+}
+
+.text_box p > a{
+    color: gold !important;
+    text-decoration: underline dotted gold;
+}
+.text_box p > a:hover{
+    color: black !important;
+    background-color: gold;
+    text-decoration: none;
+}
+
+.lista{
+    text-align: left;
+    margin-left: 20px;
+}
+.lista li::marker{
+    color: rgba(255, 217, 0, 0.555);
+}
+
+.thumbnail{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.thumbnail div{
+    display: block;
+    margin: 20px;
+    width: 200px;
+    text-align: center !important;
+    color: gold;
+    text-decoration: none;
+}   
+
+.thumbnail img{
+    width: 100%;
+    outline: 2px gold solid;
+    margin-bottom: 8px;
+    outline-offset: 5px;
+}
+
+.thumbnail a{
+    color: gold !important;
+    text-decoration: none;
+}
+
+.thumbnail a:hover{
+    color: red !important;
+}
+
+.thumbnail a:hover img{
+    outline-color: red !important;
+}
+
+
+.aqui{
+    background-image: url(nav.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white !important;
+    outline: 1px solid gold;
+    outline-offset: -5px;
+}
+
+
+.table_itens{
+    margin: 20px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.table_itens th{
+
+    outline-offset: -5px;
+    padding: 10px;
+    vertical-align: middle;
+}
+.table_itens tr:hover{
+    color: black;
+    background-color: gold;
+}
+.table_itens tr:hover td{
+    
+}
+.table_itens td{
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.table_itens tr:last-child td:first-child{
+    text-align: right !important;
+}
+
+
+.real_statue{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+@media all and (max-width:920px){
+    .title_main{
+       position: relative;
+       top:0;
+       left:0;
+       transform: none;
+    }
+}
+@media all and (max-width:620px){
+    .real_statue{
+        width: 100%;
+        float: left;
+        margin-right: 20px;
+    }
+}
