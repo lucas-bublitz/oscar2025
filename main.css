@@ -4,6 +4,9 @@
     src: url("Macondo-Regular.ttf");
 }
 
+html{
+    height: 100%;
+}
 
 body{
     background-color: black;
@@ -15,6 +18,7 @@ body{
     text-align: center;
     justify-content:center;
     flex: content;
+    height: 100%;
 }
 
 
@@ -37,7 +41,6 @@ body{
     width: 500px;
 }
 .title nav{
-    text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 20px;
@@ -54,24 +57,6 @@ body{
 .title a:hover{
     background-color: gold;
     color: black;
-}
-
-.title_main{
-    margin: 0px !important;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px 5px 5px double gold;
-    padding: 150px 50px 150px 50px;
-    width: 800px;
-    height: fit-content;
-    background-image: url("title.jpg");
-    background-size:cover;
-    border: 5px gold solid;
-    outline: 1px solid gold;
-    outline-offset: -20px;
 }
 
 .text_box{
@@ -208,13 +193,40 @@ body{
     margin-bottom: 10px;
 }
 
+.title_main{
+    margin: 0px !important;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px 5px 5px double gold;
+    padding: 40px 0px 150px 40px;
+    width: 900px;
+    background-image: url("title.jpg");
+    background-size:cover;
+    border: 5px gold solid;
+    outline: 1px solid gold;
+    outline-offset: -20px;
+    text-align: left !important;
+    box-sizing: border-box;
+}
+
 @media all and (max-width:920px){
     .title_main{
        position: relative;
        top:0;
        left:0;
        transform: none;
+       width: 100%;
+       background-position: 10% !important;
+       padding: 20px 0px 0px 0px;
+       height: 100%;
+       border: none;
+       outline: none;
+       text-align: center !important;
     }
+
 }
 @media all and (max-width:620px){
     .real_statue{
@@ -223,3 +235,4 @@ body{
         margin-right: 20px;
     }
 }
+
