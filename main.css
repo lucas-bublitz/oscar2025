@@ -15,7 +15,6 @@ body{
     text-align: center;
     justify-content:center;
     flex: content;
-    
 }
 
 
@@ -68,7 +67,7 @@ body{
     padding: 150px 50px 150px 50px;
     width: 800px;
     height: fit-content;
-    background-image: url("title.png");
+    background-image: url("title.jpg");
     background-size:cover;
     border: 5px gold solid;
     outline: 1px solid gold;
