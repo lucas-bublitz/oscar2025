@@ -220,11 +220,12 @@ body{
        transform: none;
        width: 100%;
        background-position: 10% !important;
-       padding: 20px 0px 0px 0px;
+       padding: 100px 0px 0px 0px;
        height: 100%;
        border: none;
        outline: none;
        text-align: center !important;
+       vertical-align: bottom !important;
     }
 
 }
